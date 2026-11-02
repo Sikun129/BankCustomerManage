@@ -22,7 +22,7 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long customerId;
 
-    @NotNull    (message = "First name is mandatory")
+   @Column(unique = true)
     private String firstname;
 
     private String middlename;
