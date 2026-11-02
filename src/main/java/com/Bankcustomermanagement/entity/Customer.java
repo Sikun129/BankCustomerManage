@@ -30,6 +30,9 @@ public class Customer {
     @NotBlank(message = "Last name is mandatory")
     private String lastname;
 
+    @Column(length = 50)
+    private  String surname;
+
     private String Gender;
 
 //    @Email(message = "Invalid email format")
