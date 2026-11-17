@@ -48,9 +48,7 @@ public class CustomerController {
         catch (RuntimeException e) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).build();}
     }
-
-
-
+    
     //Delete a customer
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteCustomer(@PathVariable Long id) {
